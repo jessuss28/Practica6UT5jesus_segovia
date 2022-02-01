@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Calibri;
+}
+
+body {
+	background-image: url(imagenes/fondo.gif);
+}
+#main{
+	background: #fff;
+	width: 80%;
+	margin: auto;
+	position: relative;
+	padding-bottom: 2%;
+}
+.texto{
+	width: 90%;
+}
+input{
+	margin: 2%;
+}
+#head img{
+	width: 100%;
+}
+#aside, #nav{
+	border: 1px solid lightgrey;
+	background: #e4f4fb;
+}
+#nav{
+	text-align: center;
+}
+#nav h2 {
+	display: none;
+}
+.imagen img{
+	width: 60%;
+	display: block;
+	margin: auto;
+}
+#menu li {
+	display: inline-block;
+	padding: 12px 12px 18px 12px;
+}
+
+#aside {
+	width: 15%;
+	float: right;
+	padding: 1%;
+}
+
+#texto {
+	width: 79%;
+	padding: 10px;
+	text-align: justify;
+	float: left;
+	line-height: 155%;
+}
+#texto-footer{
+	width: 95%;
+	height: 30px;
+	margin: auto;
+	margin-top: 20px;
+	border: 1px solid #bfbfbf;
+	font-style: italic;
+	color: grey;
+}
+#texto-footer p{
+	text-align: center;
+}
+#menu-footer{
+	width: fit-content;
+	margin: auto;
+	margin-top: 0.5%;
+	margin-bottom: 5%;
+}
+#menu-footer ul {
+	border: 1px solid green;
+	display: inline-block;
+
+}
+
+#menu-footer li {
+	display: inline-block;
+	padding: 0 5px 0 5px;
+}
+
+@media screen and (max-width: 700px) {
+	#texto{
+		width: 71%;
+		float: right;
+		font-size: 80%;
+		padding: 0;
+		padding-right: 2%;
+	}
+	#nav{
+		width: 25%;
+		display: inline-block;
+		background: #efefef;
+		font-size: 90%;
+		text-align: left;
+	}
+	#aside{
+		width: 22%;
+		float: none;
+		position: absolute;
+		background: #fff;
+	}
+	#menu li{
+		border-bottom: solid 1px grey;
+		display: block;
+		padding: 0;
+		padding: 4% 5%;
+	}
+	#menu li a{
+		text-decoration: none;
+		font-weight: 900;
+		color: #000;
+		text-transform: uppercase;
+	}
+	.imagen img{
+		width: 95%;
+	}
+}
+@media screen and (max-width: 360px) {
+	#nav{
+		width: 100%;
+		text-align: initial;
+
+	}
+	#nav h2 {
+		display: initial;
+	}
+	#menu li{
+		margin: 2%;
+		padding: 4%;
+		background: #e4f4fb;
+		border: solid 1px grey;
+		text-align: center;
+	}
+	#menu li a{
+		color: #6d0ed1;
+		font-size: 90%;
+	}
+	#aside{
+		width: 100%;
+		position: relative;
+		background: #efefef;
+	}
+	.texto{
+		width: 50%;
+	}
+	#texto{
+		width: 95%;
+		left: 45%;
+		transform: translateX(-50%);
+		position: relative;
+		padding: 0;
+		font-size: 85%;
+	}
+	.imagen img{
+		width: 95%;
+	}
+
+}
